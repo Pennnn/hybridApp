@@ -1,0 +1,12 @@
+<ion-view view-title="Playlists">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list>
+    <button class="button button-full button-positive" ng-click="pickImage()">
+            select（选择图片）
+        </button>
+  </ion-content>
+</ion-view>
